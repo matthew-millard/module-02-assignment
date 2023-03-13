@@ -9,9 +9,7 @@ h1,
 h2,
 h3,
 h4,
-p,
-figure,
-blockquote
+p
  {
   margin: 0;
 }
@@ -20,6 +18,15 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
 img,
@@ -34,4 +41,5 @@ textarea,
 select {
   font: inherit;
 }
+
 

@@ -1,0 +1,66 @@
+/* CSS Variables */
+:root {
+    /* colors */
+    --primary-color: #089CE7;
+    --secondary-color: #FF7D00;
+    --tertiary-color: #83C7EA;
+    --light-shade: #F9F9F9;
+    --dark-shade: #252525; 
+}
+
+body {
+    font-size: 10px;
+    color: var(--dark-shade);
+}
+
+    /* Link Styles */
+    a {
+        color: var(--dark-shade);
+        text-decoration: none;
+        /* border-bottom: 3px solid var(--primary-color);
+        padding-bottom: 3px; */
+        transition-duration: 250ms;
+    }
+
+
+
+/* Header */
+
+
+header {
+    background: var(--light-shade);
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.logo {
+    color: var(--dark-shade);
+    font-size: 3.6em;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    background-color: var(--light-shade);
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    font-size: 2em;
+}
+
+#navigation-toggle:checked ~ nav {
+    display: block;
+}
+
+#navigation-toggle {
+    /* display:none; */
+}
+
+#navigation-toggle-label {
+    
+}
