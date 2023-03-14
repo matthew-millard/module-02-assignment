@@ -6,11 +6,40 @@
     --tertiary-color: #83C7EA;
     --light-shade: #F9F9F9;
     --dark-shade: #252525; 
+
+    /* fonts */
+    --h1-font-mobile: 2rem;
+    --h2-font-mobile: 1.25rem;
+    --p-font-mobile: 1rem;
 }
 
 body {
     font-size: 10px;
     color: var(--dark-shade);
+}
+
+h1 {
+    font-size: var(--h1-font-mobile);
+}
+
+h2 {
+    font-size: var(--h2-font-mobile)
+}
+
+p {
+    font-size: var(--p-font-mobile);
+}
+
+.page-container {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.flex {
+    display: flex;
 }
 
     /* Link Styles */
@@ -29,7 +58,7 @@ body {
 header {
     background: var(--light-shade);
     text-align: center;
-    position: fixed;
+    position: relative;
     z-index: 100;
     width: 100%;
     height: 75px;
@@ -46,11 +75,12 @@ nav {
     position: absolute;
     text-align: left;
     top: 100%;
-    background-color: var(--light-shade);
+    background-color: hsla(0, 0%, 15%, 0.5);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
     transition: transform 250ms ease-in-out;
+    /* backdrop-filter: blur(2px); */
     /* display: none; */
 }
 
@@ -64,7 +94,7 @@ nav li {
 }
 
 nav a {
-    color: #252525;
+    color: var(--light-shade);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
@@ -114,4 +144,85 @@ nav a {
 
 #navigation-toggle-label span::after {
     bottom: 25px;
+}
+
+/* hero */
+.hero__copy {
+    flex-direction: column;
+    background-color: var(--light-shade);
+    margin: 1.5em auto;
+    width: 90%;
+    border: 3px solid var(--dark-shade);
+    box-shadow: 7px 7px 0 var(--primary-color);
+}
+
+.hero__copy > * {
+    padding: 5px 20px 10px;
+}
+
+
+
+/* main */
+.main {
+    background-color: var(--light-shade);
+    margin: 1.5em auto;
+    width: 90%;
+    border: 3px solid var(--dark-shade);
+    box-shadow: -7px 7px 0 var(--secondary-color);
+}
+
+.main__title {
+    padding: 2em;
+}
+
+
+/* about me */
+.about-me {
+    background-color: var(--light-shade);
+    margin: 1.5em auto;
+    width: 90%;
+    border: 3px solid var(--dark-shade);
+    box-shadow: 7px 7px 0 var(--primary-color);
+}
+
+.about-me__copy {
+    padding: 2em;
+}
+
+.about-me__copy h2 {
+    padding-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    position: absolute; /* Fix footer to the bottom of the page. */
+    bottom: 0;
+    width: 100%;
+    background-color: var(--light-shade);
+}
+
+footer ul {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+footer li {
+    padding: 1em;
+}
+
+footer a > * {
+    font-size: 2em;
 }
