@@ -11,6 +11,8 @@
     --h1-font-mobile: 2rem;
     --h2-font-mobile: 1.25rem;
     --p-font-mobile: 1rem;
+    --h1-font-desktop: 2rem;
+    --p-font-desktop: 1rem;
 }
 
 body {
@@ -53,7 +55,7 @@ p {
     }
 
     
-/* Header */
+/* Mobile Header */
 
 
 header {
@@ -72,7 +74,7 @@ header {
     line-height: 75px;
 }
 
-nav {
+.nav-mobile {
     position: absolute;
     text-align: left;
     top: 100%;
@@ -85,16 +87,16 @@ nav {
     /* display: none; */
 }
 
-nav ul {
+.nav-mobile__links {
     font-size: 2em;
     margin-left: 1em;
 }
 
-nav li {
+.nav-mobile li {
     margin: 1em 0;
 }
 
-nav a {
+.nav-mobile a {
     color: var(--light-shade);
     opacity: 0;
     transition: opacity 150ms ease-in-out;
@@ -147,21 +149,59 @@ nav a {
     bottom: 25px;
 }
 
-/* hero */
 
-.hero{
+
+/* Desktop Header */
+#desktop-header {
+    display: none;
+}
+
+.desktop-header {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--p-font-desktop);
+    font-weight: 500;
+}
+
+.nav-desktop__links {
+    gap: 2em;
+}
+
+.nav-desktop__links a {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--primary-color);
+    transition-duration: 250ms;
+}
+
+.nav-desktop__links a:hover {
+    padding-bottom: 0;
+}
+
+.social-icons__links {
+    gap: 2em;
+}
+
+
+
+
+
+/* Mobile Hero */
+.mobile-hero{
     margin-top: 1.5em;
     width: 90%;
     max-width: 600px;
     
 }
 
-.hero .flex {
+.mobile-hero .flex {
     flex-direction: column;
     align-items: center;
 }
 
-.hero__copy {
+.mobile-hero__copy {
     flex-direction: column;
     background-color: var(--light-shade);
     margin: 1.5em auto;
@@ -169,8 +209,7 @@ nav a {
     box-shadow: 7px 7px 0 var(--primary-color);
 }
 
-
-.hero__copy > * {
+.mobile-hero__copy > * {
     padding: 5px 20px 10px;
 }
 
@@ -291,3 +330,28 @@ footer a > * {
         font-size: 3em;
     }
 }
+
+
+
+
+/* Desktop Media Queries */
+@media only screen and (min-width: 1200px) {
+    #desktop-header {
+        display: block;
+    }
+    #mobile-header {
+        display: none;
+    }
+    /* #mobile-hero {
+        display: none;
+    } */
+}
+
+#desktop-header {
+    background-color: var(--light-shade);
+}
+
+#desktop-header__logo {
+    font-size: var(--h1-font-desktop);
+}
+
