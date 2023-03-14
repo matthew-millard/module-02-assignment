@@ -14,13 +14,13 @@
 </head>
 
 <body>
-<!-- Header -->
+<!-- Mobile Header -->
     <div class="page-container">
-        <header>
+        <header id="mobile-header">
             <div><span class="logo">Matt Millard</span></div>
             <input type="checkbox" id="navigation-toggle">
-            <nav>
-                <ul>
+            <nav class="nav-mobile">
+                <ul class="nav-mobile__links">
                     <li><a href="#main">Projects</a></li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#contact-me">Contact</a></li>
@@ -31,17 +31,50 @@
             </label>
         </header>
 
+<!-- Desktop Header -->
+<header id="desktop-header">
+    <div class="desktop-header flex">
+        <div>
+            <span id="desktop-header__logo">Matt Millard</span>
+        </div>
 
-<!-- hero -->
-        <section class="hero">
+        <nav class="nav-desktop">
+            <ul class="nav-desktop__links flex">
+                <li><a href="#main">Portfolio</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-icons">
+            <ul class="social-icons__links flex">
+                <li><a href="https://github.com/matthew-millard" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/matthew-millard-ab7b90250/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitch"></i></a></li>
+                <li><a href="https://twitter.com/_MattMillard"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j" target="_blank"><i class="fa-brands fa-spotify"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+
+<!-- Mobile Hero -->
+        <section id="mobile-hero" class="mobile-hero">
             <div class="flex">
-                <img class="hero__image" src="./images/matt-millard-1024px-1x1.jpg" alt="A black and white profile picture of Matt.">
-                <div class="hero__copy flex">
+                <img class="mobile-hero__image" src="./images/matt-millard-1024px-1x1.jpg" alt="A black and white profile picture of Matt.">
+                <div class="mobile-hero__copy flex">
                     <h1>Hi, I'm Matt.</h1>
                     <p>I am a junior <span class="highlight">Full Stack</span>  web developer, living in Ottawa, Canada</p>
                 </div>
             </div>
         </section>
+
+
+
+<!-- Desktop Hero -->
 
 
 
