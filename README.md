@@ -39,6 +39,8 @@ Create a portfolio web app that showcases my skills and talents to employers. Th
 
 - ![Desktop Wireframe](./wireframes/module-02-matt-millard.drawio.png)
 
+- ![Mobile Wireframe](./wireframes/mobile-module-02-matt-millard.drawio.png)
+
 ## My Process
 
 1. Create a wireframe for both the mobile and desktop viewports.
