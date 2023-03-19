@@ -56,4 +56,3 @@ Create a portfolio web app that showcases my skills and talents to employers. Th
 
 CSS Reset
 [Andy Bell](https://andy-bell.co.uk/a-modern-css-reset/)
-
