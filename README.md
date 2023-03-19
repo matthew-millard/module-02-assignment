@@ -5,6 +5,7 @@
 - [The Assignment Brief](#the-assignment-brief)
 - [Links](#links)
 - [Screenshots](#screenshots)
+- [Wireframes](#wireframes)
 - [My Process](#my-process)
 - [Acknowledgments](#acknowledgments)
 
@@ -33,6 +34,10 @@ Create a portfolio web app that showcases my skills and talents to employers. Th
 - ![Colour Palette](./Screenshots/color-palette-module-2-assignment.png)
 
 ---
+
+## Wireframes
+
+- ![Desktop Wireframe](./wireframes/module-02-matt-millard.drawio.png)
 
 ## My Process
 
