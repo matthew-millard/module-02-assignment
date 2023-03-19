@@ -39,6 +39,10 @@ p {
     font-size: var(--p-font-mobile);
 }
 
+.hightlight {
+    color: var(--secondary-color);
+}
+
 .page-container {
     min-height: 100vh;
     position: relative;
@@ -205,7 +209,14 @@ header {
     gap: 2em;
 }
 
+.social-icons__links li {
+    transition-duration: 250ms;
+}
 
+/* 2px vertical transistion on hover */
+.social-icons__links li:hover {
+    transform: translateY(-2px);
+}
 
 
 
@@ -320,6 +331,7 @@ header {
     min-width: 200px;
     max-width: 100%;
     flex: 1;
+    overflow: hidden;
 }
 
 .overlay {
@@ -339,6 +351,15 @@ header {
     padding-top: 10px;
 }
 
+
+/* Image hover effect */
+
+.main img {
+    transition-duration: 250ms;
+}
+.main img:hover {
+    transform: scale(1.1, 1.1);
+}
 
 
 
@@ -496,6 +517,13 @@ footer a > * {
     font-size: 2em;
 }
 
+.footer__links li {
+    transition-duration: 250ms;
+}
+
+.footer__links li:hover {
+    transform: translateY(-2px);
+}
 
 
 
